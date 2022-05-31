@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCO</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/18c9ad9ad8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    :root {
+      --color-header: #c7d2df;
+      --color-footer: #47525e;
+      --color-img-bg: #e5e9f2;
+      --color-text: #bbc3ce;
+      --color-button-bg: #8291a5;
+    }
+    header {
+      background-color: var(--color-header);
+      margin-bottom: 2rem;
+    }
+    .logo {
+      background-color: var(--color-button-bg);
+      border-radius: 0.3rem;
+      padding: 0.1rem 1.8rem 0.2rem 1.8rem;
+      font-size: 0.9rem;
+    }
+    /* ---------- MAIN ---------- */
+    main {
+      margin-bottom: 2rem;
+    }
+    .Cart {
+      background-color: var(--color-footer);
+      border-radius: 0.3rem;
+      padding: 0.2rem 1.5rem 0.4rem 1.5rem;
+      font-size: 0.9rem;
+    }
+    .card {
+      border: none;
+    }
+    .card-text {
+      color: var(--color-text);
+    }
+    .active {
+      background-color: var(--color-img-bg);
+      padding: 0.5rem 0;
+      margin: -0.5rem 0;
+    }
+    .block {
+      background-color: var(--color-header);
+      height: 500px;
+      width: 250px;
+      border-radius: 0.3rem;
+    }
+    .card img {
+      background-color: var(--color-img-bg);
+      height: 200px;
+      border: none;
+    }
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: var(--color-footer);
+    }
+    .nav-link {
+      color: white;
+      transition: 0.2 ease-in-out;
+    }
+    .nav-link:hover {
+      color: var(--color-header);
+    }
+    .footer-logo {
+      background-color: var(--color-button-bg);
+      max-height: 2rem;
+      max-width: 8rem;
+      border-radius: 0.3rem;
+      margin-right: 4rem;
+    }
+    .footer-box {
+      padding: 3rem 0 5rem 0;
+    }
+    .btn-light {
+      padding: 0.5rem 2rem;
+    }
+    input {
+      padding: 0.4rem 1rem 0.6rem 0.8rem;
+      border-radius: 0.3rem;
+      border: none;
+    }
+    .socials {
+      margin-top: 1rem;
+    }
+    .socials i {
+      padding: 0 0.5rem;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <section class="container">
+          <div class="navbar-brand text-light logo">Logo</div>
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item px-3 active">
+                <a class="nav-link" href="#">Start</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="Cart text-light">
+            Cart
+            <span id="Cart-number">(1)</span>
+        </section>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <div class="main-left col-lg-3">
+          <div class="block"></div>
+        </div>
+
+        <div class="row main-right col-lg-9">
+          <h1>Title 1</h1>
+
+          <div class="col">
+            <div class="card">
+              <img src="" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Lorem ipsum dolor</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  vestibulum mauris ut diam vulputate, nec scelerisque magna
+                  maximus. Suspendisse sit amet ex
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Lorem ipsum dolor</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  vestibulum mauris ut diam vulputate, nec scelerisque magna
+                  maximus. Suspendisse sit amet ex
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4 class="card-title">Lorem ipsum dolor</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  vestibulum mauris ut diam vulputate, nec scelerisque magna
+                  maximus. Suspendisse sit amet ex
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-light">
+      <div class="container">
+        <div class="footer-box row">
+          <div class="footer-left col-lg-6">
+            <div class="row text-center">
+              <div class="navbar-brand col footer-logo"></div>
+
+              <ul class="navbar-nav col text-start">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav col text-start">
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">T & Cs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Community</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right col-lg-6">
+            <form action="" class="col">
+              <p>Get our newsletter</p>
+              <div class="newsletter">
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  name="mail"
+                  required
+                />
+                <input type="submit" value="Subscribe" class="btn btn-light" />
+              </div>
+
+              <div class="socials">
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
